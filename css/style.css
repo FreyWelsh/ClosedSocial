@@ -219,6 +219,7 @@ hr.hr{
 }
 html, body{
 	overflow: auto;
+<<<<<<< HEAD
 	overflow-x: hidden;
 }
 
@@ -269,4 +270,6 @@ body { margin-top:20px; }
 }
 .panel-body{
     display: none;
+=======
+>>>>>>> origin/master
 }

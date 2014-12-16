@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 //this will eventually be replaced, but it is the JS validation for testing.
+=======
+
+>>>>>>> origin/master
 function validate(){
 	var username = document.getElementById("email").value;
 	var password = document.getElementById("key").value;
@@ -17,14 +21,21 @@ function validate(){
 	}
 }
 
+<<<<<<< HEAD
 //simple alert, no js validation, will be done on backend
+=======
+>>>>>>> origin/master
 function register(){
 	alert ("Welcome, we now have all of your information");
 	window.location = "http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/mainP.html";
 	return false;
 }
 
+<<<<<<< HEAD
 // this was the code to process the modal, I am not sure if it is helpful at all since you are going to write the method
+=======
+
+>>>>>>> origin/master
 // $("button#submit").click(function(){
 // 	$.ajax({
 // 	    type: "POST",
@@ -40,13 +51,22 @@ function register(){
 //     });
 // });
 
+<<<<<<< HEAD
 //this is the filler text for a new thread. not completely useful or useless in it's current form
+=======
+>>>>>>> origin/master
 function newthread(){
 	$('<div class = "detailBox"></div>').html(
         '<div class="titleBox">' +
           '<label id ="subject1">Thread Title</label>' +
             '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>' +
         '</div>' +
+<<<<<<< HEAD
+=======
+        '<div class="commentBox threadBack">' +        
+            '<p class="taskDescription">Description of the Thread</p>' +
+        '</div>' +
+>>>>>>> origin/master
         '<div class = "threadBack">' +
             '<div class="actionBox">' +
                 '<ul class="commentList">' +
@@ -89,7 +109,10 @@ function newthread(){
         '</div>').appendTo('#threads');
 }
 
+<<<<<<< HEAD
 //for login screen, show password radio
+=======
+>>>>>>> origin/master
 function showPassword() {
     
     var key_attr = $('#key').attr('type');
@@ -108,6 +131,7 @@ function showPassword() {
     
 }
 
+<<<<<<< HEAD
 // This doesn't do anything at all, but might be helpful sometime so I kept it.
 function createThread() {
     // var panels = $('.vote-results');
@@ -137,6 +161,8 @@ function createThread() {
 }
 
 //most of this was for horizontal scrolling, but now it just declares an onclick event
+=======
+>>>>>>> origin/master
 window.onload = function() {
 	// var path = document.title;
 	// path = path.substr(path);
