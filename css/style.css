@@ -111,7 +111,7 @@ footer {
 	display: block;
 }
 strong {
-	color: #DDA0DD;
+	color: blue;
 }
 
 /*    --------------------------------------------------
@@ -219,4 +219,8 @@ hr.hr{
 }
 html, body{
 	overflow: auto;
+}
+
+.comment {
+        margin-left: 20px;
 }

@@ -1,3 +1,6 @@
+<?php
+    if(!isset($_SESSION)) { session_start(); }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,20 +12,13 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Register</title>
+        <title>Login</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
         <link href="css/style.css" rel="stylesheet">
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
     </head>
 
@@ -33,26 +29,27 @@
             	<div class="row">
             	    <div class="col-xs-12">
                 	    <div class="form-wrap">
-                        <h1>Register New User</h1>
-                            <form role="form" method="post" id="login-form" onSubmit="javascript:return register();" autocomplete="off">
-                                <div class="form-group">
-                                    <label for="name" class="sr-only">Username</label>
-                                    <input type="name" name="name" id="name" class="form-control" placeholder="My Username">
-                                </div>
+                        <h1>Log in with your email account</h1>
+                            <div id="mybad"></div>
+                            <!-- onSubmit="javascript:return validate();"  -->
+                            <form role="form" method="post" id="login-form" autocomplete="off">
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
                                     <input type="email" name="email" id="email" class="form-control" placeholder="somebody@example.com">
                                 </div>
                                 <div class="form-group">
                                     <label for="key" class="sr-only">Password</label>
-                                    <input type="password" name="key" id="pass" class="form-control" placeholder="Password">
+                                    <input type="password" name="key" id="key" class="form-control" placeholder="Password">
                                 </div>
-                                <div class="form-group">
-                                    <label for="key" class="sr-only">Password</label>
-                                    <input type="password" name="key" id="pass1" class="form-control" placeholder="Re-enter Password">
+                                <div class="checkbox">
+                                    <span class="character-checkbox" onclick="showPassword()"></span>
+                                    <span class="label">Show password</span>
                                 </div>
-                                <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Register">
+                                <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Log in">
                             </form>
+                            <a href="" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
+                            <hr>
+                            <a href="http://voyager.cs.bgsu.edu/cs3140rg/cs3140b2/project/register.php" class="forget">New User?</a>
                 	    </div>
             		</div> <!-- /.col-xs-12 -->
             	</div> <!-- /.row -->
@@ -93,12 +90,11 @@
         </footer>
 
         <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
+        <script type="text/javaScript" src="js/jquery.js"></script>
         <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-
-        <script src="js/site.js"></script>
+        <script type="text/javaScript" src="js/bootstrap.min.js"></script>
+        <script type="text/javaScript" src="js/login.js"></script>
+        <script type="text/javaScript" src="js/site.js"></script>
     </body> 
 
 </html>

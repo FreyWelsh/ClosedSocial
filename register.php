@@ -1,3 +1,6 @@
+<?php
+    if(!isset($_SESSION)) { session_start(); }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +12,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Login</title>
+        <title>Register</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,41 +20,41 @@
         <!-- Custom CSS -->
         <link href="css/style.css" rel="stylesheet">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+
 
     </head>
 
-    <body>   
+    <body>
+     
         <div class = "backgroundPicture"/>
         <section id="login">
             <div class="container">
             	<div class="row">
             	    <div class="col-xs-12">
                 	    <div class="form-wrap">
-                        <h1>Log in with your email account</h1>
-                            <form role="form" method="post" id="login-form" onSubmit="javascript:return validate();" autocomplete="off">
+                        <h1>Register New User</h1>
+                            <div id="mybad"></div>
+                            <form role="form" method="post" id="registration-form" autocomplete="off">
+                                <div class="form-group">
+                                    <label for="name" class="sr-only">Username</label>
+                                    <input type="name" name="name" id="name" class="form-control" placeholder="My Username">
+                                    </input>
+                                </div>
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
                                     <input type="email" name="email" id="email" class="form-control" placeholder="somebody@example.com">
                                 </div>
                                 <div class="form-group">
                                     <label for="key" class="sr-only">Password</label>
-                                    <input type="password" name="key" id="key" class="form-control" placeholder="Password">
+                                    <input type="password" name="key" id="pass" class="form-control" placeholder="Password">
                                 </div>
-                                <div class="checkbox">
-                                    <span class="character-checkbox" onclick="showPassword()"></span>
-                                    <span class="label">Show password</span>
+                                <div class="form-group">
+                                    <label for="key" class="sr-only">Password</label>
+                                    <input type="password" name="key" id="pass1" class="form-control" placeholder="Re-enter Password">
                                 </div>
-                                <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Log in">
+                                <input type="submit" id="btn-register" class="btn btn-custom btn-lg btn-block" value="Register">
+                                <a href="" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
                             </form>
-                            <a href="" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
-                            <hr>
-                            <a href="http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/register.html" class="forget">New User?</a>
                 	    </div>
             		</div> <!-- /.col-xs-12 -->
             	</div> <!-- /.row -->
@@ -96,7 +99,7 @@
 
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
-
+        <script src="js/register.js" type="text/javaScript"></script>
         <script src="js/site.js"></script>
     </body> 
 

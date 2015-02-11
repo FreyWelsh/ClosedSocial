@@ -17,11 +17,11 @@ function validate(){
 	}
 }
 
-function register(){
-	alert ("Welcome, we now have all of your information");
-	window.location = "http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/mainP.html";
-	return false;
-}
+// function register(){
+// 	alert ("Welcome, we now have all of your information");
+// 	window.location = "http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/mainP.html";
+// 	return false;
+// }
 
 
 // $("button#submit").click(function(){
