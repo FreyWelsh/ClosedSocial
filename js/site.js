@@ -1,3 +1,4 @@
+//this will eventually be replaced, but it is the JS validation for testing.
 
 function validate(){
 	var username = document.getElementById("email").value;
@@ -17,12 +18,24 @@ function validate(){
 	}
 }
 
+<<<<<<< HEAD
 // function register(){
 // 	alert ("Welcome, we now have all of your information");
 // 	window.location = "http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/mainP.html";
 // 	return false;
 // }
+=======
 
+//simple alert, no js validation, will be done on backend
+
+function register(){
+	alert ("Welcome, we now have all of your information");
+	window.location = "http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/mainP.html";
+	return false;
+}
+>>>>>>> origin/master
+
+// this was the code to process the modal, I am not sure if it is helpful at all since you are going to write the method
 
 // $("button#submit").click(function(){
 // 	$.ajax({
@@ -39,15 +52,20 @@ function validate(){
 //     });
 // });
 
+
+//this is the filler text for a new thread. not completely useful or useless in it's current form
+
 function newthread(){
 	$('<div class = "detailBox"></div>').html(
         '<div class="titleBox">' +
           '<label id ="subject1">Thread Title</label>' +
             '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>' +
         '</div>' +
+
         '<div class="commentBox threadBack">' +        
             '<p class="taskDescription">Description of the Thread</p>' +
         '</div>' +
+
         '<div class = "threadBack">' +
             '<div class="actionBox">' +
                 '<ul class="commentList">' +
@@ -90,6 +108,9 @@ function newthread(){
         '</div>').appendTo('#threads');
 }
 
+
+//for login screen, show password radio
+
 function showPassword() {
     
     var key_attr = $('#key').attr('type');
@@ -108,6 +129,37 @@ function showPassword() {
     
 }
 
+
+// This doesn't do anything at all, but might be helpful sometime so I kept it.
+function createThread() {
+    // var panels = $('.vote-results');
+    // var panelsButton = $('.dropdown-results');
+    // panels.hide();
+
+    // //Click dropdown
+    // panelsButton.click(function() {
+    //     //get data-for attribute
+    //     var dataFor = $(this).attr('data-for');
+    //     var idFor = $(dataFor);
+
+    //     //current button
+    //     var currentButton = $(this);
+    //     idFor.slideToggle(400, function() {
+    //         //Completed slidetoggle
+    //         if(idFor.is(':visible'))
+    //         {
+    //             currentButton.html('Hide Results');
+    //         }
+    //         else
+    //         {
+    //             currentButton.html('View Results');
+    //         }
+    //     })
+    // });
+}
+
+//most of this was for horizontal scrolling, but now it just declares an onclick event
+
 window.onload = function() {
 	// var path = document.title;
 	// path = path.substr(path);
@@ -117,5 +169,8 @@ window.onload = function() {
 	// 	}());
 	// }
 	document.getElementById("addbut").click = newthread;
+    $(".clickableRow").click(function(){
+        window.document.location = $(this).attr("href");
+    });
 
 }

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Closed Social</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id ="mainPage">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/mainP.html">Closed Social</a>
+
+                <a class="navbar-brand" href="#">Closed Social</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/archive.html">Archive</a>
+                        <a href="#">Archive</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!--NAVBAR IS DONE-->
+
+
+    <!-- Page Content -->
+    <div class="container">
+            <!-- Page Header -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">My Threads
+                        <small></small>
+                        <small>(Group)</small>
+                    </h1>
+                </div>
+            </div>
+
+<!-- adds button to main page and display's modal for a new thread -->
+            <a id = "addbut" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" data-original-title>Add New Thread</a>
+             <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Create your own thread!</h4>
+                        </div>
+                        <form action="#" method="post" accept-charset="utf-8">
+                        <div class="modal-body" style="padding: 5px;">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                        <input class="form-control" name="subject" placeholder="Thread Title" type="text" required />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <textarea style="resize:vertical;" class="form-control" placeholder="Thread original post..." rows="6" name="comment" required></textarea>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="panel-footer" style="margin-bottom:-14px;">
+                                <input type="submit" class="btn btn-success" value="Post"/>
+                                    <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                <input type="reset" class="btn btn-danger" value="Clear" />
+                                    <!--<span class="glyphicon glyphicon-remove"></span>-->
+                                <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Discard</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- This is only still here for testing, you can access the filler code in JS to execute-->
+            <div class = "centerContent">
+                <button id ="addbut" onclick="newthread()" class = "btn btn-custom btn-lg btn-block">Add new Thread</button>
+            </div>
+
+            <!-- Projects Row -->
+            <div class = "horzScroll" id = "threads">
+                
+            </div>
+
+            <!-- /.row -->
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; Closed Social 2014</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </footer>
+
+        </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+
+
+    <script src="js/site.js"></script>
+
+</body>
+
+</html>
+
+<!-- <div class="detailBox">
+                    <div class="titleBox">
+                      <label id ="subject1">Thread Title</label>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="commentBox threadBack">
+                        
+                        <p class="taskDescription">Description of the Thread</p>
+                    </div>
+                    <div class = "threadBack">
+                        <div class="actionBox">
+                            <ul class="commentList">
+                                <li>
+                                    <div class="commenterImage">
+                                      <img src="" />
+                                    </div>
+                                    <div class="commentText">
+                                        <p class="">Filler text OP</p> <span class="date sub-text"></span>
+                                    </div>
+                                </li>
+                                <hr class = "hr"/>
+                                <li>
+                                    <div class="commenterImage">
+                                      <img src="" />
+                                    </div>
+                                    <div class="commentText">
+                                        <p class="">First Response</p> <span class="date sub-text"></span>
+                                    </div>
+                                </li>
+                                <hr class = "hr"/>
+                                <li>
+                                    <div class="commenterImage">
+                                      <img src="" />
+                                    </div>
+                                    <div class="commentText">
+                                        <p class="">Most receent response</p> <span class="date sub-text"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="form-inline" role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Your comments" />
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-default">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
