@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Closed Social</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id ="mainPage">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/mainP.html">Closed Social</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/archive.html">Archive</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	<div class="container">
+	    <h1>Click the filter icon <small>(<i class="glyphicon glyphicon-filter"></i>)</small></h1>
+    	<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Threads</h3>
+						<div class="pull-right">
+							<span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+								<i class="glyphicon glyphicon-filter"></i>
+							</span>
+						</div>
+					</div>
+					<div class="panel-body">
+						<input type="text" class="form-control" id="task-table-filter" data-action="filter" data-filters="#task-table" placeholder="Filter Tasks" />
+					</div>
+					<table class="table table-hover" id="task-table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Thread Name</th>
+								<th>Thread Owner</th>
+								<th>Date of OP</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>i</td>
+								<td>Thread name </td>
+								<td>Dick Head </td>
+								<td>ordered by desc</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Mobile Landing Page</td>
+								<td>Kilgore Trout</td>
+								<td>completed</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Add SEO tags</td>
+								<td>Bob Loblaw</td>
+								<td>failed qa</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Migrate to Bootstrap 3</td>
+								<td>Emily Hoenikker</td>
+								<td>in progress</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Update jQuery library</td>
+								<td>Holden Caulfield</td>
+								<td>deployed</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>Issues in IE7</td>
+								<td>Jane Doe</td>
+								<td>failed qa</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>Bugs from Sprint 14</td>
+								<td>Kilgore Trout</td>
+								<td>completed</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+
+
+    <script src="js/archive.js"></script>
+
+</body>
+
+</html>
