@@ -28,7 +28,10 @@ div.threadBack{
 }
 
 html, body{
+<<<<<<< HEAD
 	width: 980;
+=======
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 	position: absolute;
 	background-color: #ECDFEC;
 
@@ -111,7 +114,11 @@ footer {
 	display: block;
 }
 strong {
+<<<<<<< HEAD
 	color: #DDA0DD;
+=======
+	color: blue;
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 }
 
 /*    --------------------------------------------------
@@ -219,6 +226,17 @@ hr.hr{
 }
 html, body{
 	overflow: auto;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+}
+
+.comment {
+        margin-left: 20px;
+}
+=======
+<<<<<<< HEAD
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 	overflow-x: hidden;
 }
 
@@ -269,4 +287,11 @@ body { margin-top:20px; }
 }
 .panel-body{
     display: none;
+<<<<<<< HEAD
 }
+=======
+=======
+>>>>>>> origin/master
+}
+>>>>>>> origin/master
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b

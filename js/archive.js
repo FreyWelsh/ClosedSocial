@@ -28,7 +28,11 @@
 	$('[data-action="filter"]').filterTable();
 })(jQuery);
 
+<<<<<<< HEAD
 $(function(){
+=======
+$(document).ready(function(){
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
     // attach table filter plugin to inputs
 	$('[data-action="filter"]').filterTable();
 	

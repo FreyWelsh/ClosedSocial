@@ -1,4 +1,8 @@
 //this will eventually be replaced, but it is the JS validation for testing.
+<<<<<<< HEAD
+=======
+
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 function validate(){
 	var username = document.getElementById("email").value;
 	var password = document.getElementById("key").value;
@@ -17,14 +21,34 @@ function validate(){
 	}
 }
 
+<<<<<<< HEAD
 //simple alert, no js validation, will be done on backend
+=======
+<<<<<<< HEAD
+// function register(){
+// 	alert ("Welcome, we now have all of your information");
+// 	window.location = "http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/mainP.html";
+// 	return false;
+// }
+=======
+
+//simple alert, no js validation, will be done on backend
+
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 function register(){
 	alert ("Welcome, we now have all of your information");
 	window.location = "http://voyager.cs.bgsu.edu/cs3140rg/cs3140d1/ClosedSocial/mainP.html";
 	return false;
 }
+<<<<<<< HEAD
 
 // this was the code to process the modal, I am not sure if it is helpful at all since you are going to write the method
+=======
+>>>>>>> origin/master
+
+// this was the code to process the modal, I am not sure if it is helpful at all since you are going to write the method
+
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 // $("button#submit").click(function(){
 // 	$.ajax({
 // 	    type: "POST",
@@ -40,13 +64,27 @@ function register(){
 //     });
 // });
 
+<<<<<<< HEAD
 //this is the filler text for a new thread. not completely useful or useless in it's current form
+=======
+
+//this is the filler text for a new thread. not completely useful or useless in it's current form
+
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 function newthread(){
 	$('<div class = "detailBox"></div>').html(
         '<div class="titleBox">' +
           '<label id ="subject1">Thread Title</label>' +
             '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>' +
         '</div>' +
+<<<<<<< HEAD
+=======
+
+        '<div class="commentBox threadBack">' +        
+            '<p class="taskDescription">Description of the Thread</p>' +
+        '</div>' +
+
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
         '<div class = "threadBack">' +
             '<div class="actionBox">' +
                 '<ul class="commentList">' +
@@ -89,7 +127,13 @@ function newthread(){
         '</div>').appendTo('#threads');
 }
 
+<<<<<<< HEAD
 //for login screen, show password radio
+=======
+
+//for login screen, show password radio
+
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 function showPassword() {
     
     var key_attr = $('#key').attr('type');
@@ -108,6 +152,10 @@ function showPassword() {
     
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 // This doesn't do anything at all, but might be helpful sometime so I kept it.
 function createThread() {
     // var panels = $('.vote-results');
@@ -137,6 +185,10 @@ function createThread() {
 }
 
 //most of this was for horizontal scrolling, but now it just declares an onclick event
+<<<<<<< HEAD
+=======
+
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 window.onload = function() {
 	// var path = document.title;
 	// path = path.substr(path);
@@ -146,5 +198,11 @@ window.onload = function() {
 	// 	}());
 	// }
 	document.getElementById("addbut").click = newthread;
+<<<<<<< HEAD
+=======
+    $(".clickableRow").click(function(){
+        window.document.location = $(this).attr("href");
+    });
+>>>>>>> f50cfe925fac0b8a8d4a88600f6d34a22c4af06b
 
 }
